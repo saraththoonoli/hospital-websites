@@ -1,0 +1,199 @@
+@import './variables.scss';
+@import './functions.scss';
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.hsptl-banner-div{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/dctr-bg-2.jpg);
+    background-size: cover;
+    // position: absolute;
+    padding-bottom: 200px;
+  
+}
+.hsptl-banner-title{
+    color: $heading-colour;
+    @include heading-style;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    &:hover{
+        color: red;
+    }
+    cursor: pointer;
+}
+.hsptl-banner-discription{
+    color: $discription-colour;
+    @include discription-style;
+    padding-left: 80px;
+    width: 55%    
+}
+span{
+    color: $span-color
+}
+.hsptl-banner-btn{
+    @include button-style;
+    margin-left: 80px;
+    &:hover{
+        color: red;
+        background-color: rgb(226, 226, 127);
+    }
+    cursor: pointer;
+    
+}
+
+.hsptl-care-card-row{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    margin-top: -80px;
+}
+
+.hsptl-care-card-col-1{
+    @include hsptl-card;
+    background-color:$shadow-clr-1;
+
+}
+.hsptl-care-card-col-2{
+    @include hsptl-card;
+    background:$shadow-clr-2;;
+
+}
+.hsptl-care-card-col-3{
+    @include hsptl-card;
+    background:$shadow-clr-3;
+
+}
+.hsptl-care-head{
+    @include card-head;
+    @include hover1
+
+
+}
+.hsptl-care-discription{
+    @include discription-style;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 80px;
+    @include hover
+}
+.hsptl-second-title-heaad{
+    @include heading-style;
+    text-align: center;
+    padding-top: 80px;
+    color: $heading-colour;
+    padding-bottom: 25px;
+}
+.hsptl-second-title-discription{
+    @include discription-style;
+    color: $discription-colour;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+
+// fourth section
+
+.hsptl-fourth-card{
+    padding-top: 2px;
+
+}
+.hsptl-fourth-card-row{
+   @include two-row-div;
+}
+.hsptl-fourth-row-col{
+    width: 50%;
+
+}
+.hsptl-fourth-row-row{
+    @include two-row-div;
+    padding: 25px;
+    text-align: start;
+
+}
+.hsptl-fourth-row-row-col{
+    padding-top: 50px;
+    padding-inline: 40px;
+}
+.hsptl-fourth-card-dis{
+    @include discription-style;
+    font-size: 15px;
+    line-height: 24px
+}
+.hsptl-fourth-card-title{
+    @include heading-style;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive first section */
+
+@media (max-width: 768px) {
+    .hsptl-care-card {
+        width: 100%;
+    }
+
+    .hsptl-care-card-row {
+        width: 100%;
+        display: block;
+
+}
+    .hsptl-care-card-col-1{
+        width: 100%;
+        height: auto;
+    }
+    .hsptl-care-card-col-2{
+        width: 100%;
+        height: auto;
+    }
+    .hsptl-care-card-col-3{
+        width: 100%;
+        height: auto;
+    }
+}
+// fourth section
+@media (max-width: 768px) {
+    .hsptl-fourth-card {
+        width: 100%;
+    }
+
+    .hsptl-fourth-card-row {
+        width: 100%;
+        display: block;
+        text-align: center;
+
+
+}
+    .hsptl-fourth-row-col{
+        width: 100%;
+        height: auto;
+    }
+    .hsptl-fourth-row-row{
+        width: 90%;
+        height: auto;
+       
+    
+    }
+    
+}

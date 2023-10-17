@@ -1,0 +1,53 @@
+
+
+@mixin heading-style {
+    font-size: 55px;
+    font-weight: 100px;
+}
+
+@mixin button-style{
+    padding: 10px;
+    width: 150px;
+    border: none;
+    background-color: gray;
+    text-align: center;
+    border-radius: 2.5px;
+}
+
+@mixin discription-style {
+    font-size: 25px;
+    font-weight: 100px;
+    line-height: 35px;
+    font-style: italic;
+    padding-bottom: 30px;
+}
+@mixin hsptl-card{
+    width: 33.33%;
+    height: auto;
+    padding-top: 80px;
+    
+}
+@mixin card-head{
+    font-size: 18px;
+    font-weight: 600px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+}
+@mixin hover{
+    &:hover{
+        color: red
+    }
+    cursor: pointer
+}
+@mixin hover1{
+    &:hover{
+        color: rgb(229, 97, 229)
+    }
+    cursor: pointer
+}
+
+@mixin two-row-div{
+    display: flex;
+    width: 90%;
+}
