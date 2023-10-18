@@ -1,0 +1,17 @@
+.fifth-department-col{
+    h3{
+        color: rgb(251, 251, 251);
+        padding-top: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        transition: .5s;
+        &:hover{
+            color: red;
+            font-size: 20px;
+        }
+    }
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+   
+}

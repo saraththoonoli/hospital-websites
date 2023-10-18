@@ -1,0 +1,23 @@
+
+.row{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    margin: auto;
+    padding-top: 50px;
+
+    
+}
+.col{
+    width: 40%;
+    justify-content: baseline;
+    p{
+        @include discription-style;
+        line-height: 23px;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    
+
+}

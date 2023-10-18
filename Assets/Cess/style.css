@@ -1,3 +1,60 @@
+.button {
+  padding: 10px;
+  width: 150px;
+  border: none;
+  background-color: gray;
+  text-align: center;
+  border-radius: 2.5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  color: red;
+  background-color: rgb(226, 226, 127);
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-align: start;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.col {
+  width: 40%;
+  justify-content: baseline;
+}
+.col p {
+  font-size: 25px;
+  font-weight: 100px;
+  line-height: 35px;
+  font-style: italic;
+  padding-bottom: 30px;
+  line-height: 23px;
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.fifth-department-col {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.fifth-department-col h3 {
+  color: rgb(251, 251, 251);
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+.fifth-department-col h3:hover {
+  color: red;
+  font-size: 20px;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -173,6 +230,119 @@ span {
   font-size: 20px;
 }
 
+.hsptl-fifth-department {
+  background-color: rgb(187, 183, 183);
+}
+
+.hsptl-fifth-department-title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(233, 230, 230);
+  font-size: 50px;
+}
+
+.hsptl-fifth-row {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.hsptl-fifth-col-1 p {
+  font-size: 25px;
+  font-weight: 100px;
+  line-height: 35px;
+  font-style: italic;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+  width: 85%;
+  margin: auto;
+}
+
+.hsptl-fifth-col-2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.hsptl-seventh-section {
+  padding-top: 40px;
+  background-color: rgb(233, 230, 230);
+  padding-bottom: 50px;
+}
+
+.seventh-section-discription {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  padding-top: 20px;
+  font-style: italic;
+}
+
+.seventh-section-head {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.hsptl-care-card-row--seventh-section {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+}
+
+.seveth-section-details {
+  background-color: white;
+}
+.seveth-section-details h3 {
+  text-align: start;
+  padding-top: 20px;
+  padding: 10px;
+}
+.seveth-section-details p {
+  text-align: start;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-style: italic;
+  padding: 10px;
+}
+.seveth-section-details h6 {
+  text-decoration: none;
+  text-align: start;
+  font-style: italic;
+  padding: 10px;
+}
+
+.hsptl-care-card-col-1--seventh-section {
+  width: 31%;
+  padding-top: 25px;
+}
+
+.hsptl-map-section {
+  background-image: url(../img/map-web.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 800px;
+}
+
+.map-title {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 100px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.map-description {
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
 /* responsive first section */
 @media (max-width: 768px) {
   .hsptl-care-card {
@@ -184,15 +354,20 @@ span {
   }
   .hsptl-care-card-col-1 {
     width: 100%;
-    height: auto;
+    display: block;
   }
   .hsptl-care-card-col-2 {
     width: 100%;
-    height: auto;
+    display: block;
   }
   .hsptl-care-card-col-3 {
     width: 100%;
-    height: auto;
+    display: block;
+    text-align: center;
+  }
+  .hsptl-fourth-row-row {
+    width: 100%;
+    display: block;
   }
 }
 @media (max-width: 768px) {
@@ -211,5 +386,43 @@ span {
   .hsptl-fourth-row-row {
     width: 90%;
     height: auto;
+  }
+  .hsptl-fifth-col-1 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hsptl-fourth-card {
+    width: 100%;
+  }
+  .hsptl-fourth-card-row {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .hsptl-fifth-row {
+    width: 100%;
+    display: block;
+  }
+  .hsptl-fifth-col-2 {
+    width: 100%;
+    display: block;
+  }
+  .row {
+    width: 100%;
+    display: block;
+  }
+  .col {
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+  }
+  .hsptl-care-card-row--seventh-section {
+    width: 100%;
+    display: block;
+  }
+  .hsptl-care-card-col-1--seventh-section {
+    width: 100%;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

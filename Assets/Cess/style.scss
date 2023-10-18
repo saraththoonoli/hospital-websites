@@ -1,5 +1,8 @@
 @import './variables.scss';
 @import './functions.scss';
+@import '../Atom/button';
+@import '../molecule/hospital_tile';
+@import '../molecule/department_card';
 
 *{
     padding: 0px;
@@ -129,7 +132,136 @@ span{
 .hsptl-fourth-card-title{
     @include heading-style;
     font-size: 20px;
+  
 }
+
+
+// fifth department
+
+.hsptl-fifth-department{
+    background-color:$shadow-clr-2 ;
+}
+.hsptl-fifth-department-title{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $shadow-clr-1;
+    font-size: 50px;
+}
+.hsptl-fifth-row{
+   width: 100%;
+   padding-bottom: 50px
+}
+.hsptl-fifth-col-1{
+    
+    p{
+        @include discription-style;
+        text-align: center;
+        color: white;
+        width: 85%;
+        margin: auto;
+        
+       
+    }
+
+}
+
+.hsptl-fifth-col-2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+// seventh section
+.hsptl-seventh-section{
+    padding-top: 40px;
+    background-color: $shadow-clr-1;
+    padding-bottom: 50px;
+   
+    }
+.seventh-section-discription{
+    text-align: center;
+    width: 75% ;
+    margin: auto;
+    padding-top: 20px;
+    font-style: italic;
+
+}
+.seventh-section-head{
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.hsptl-care-card-row--seventh-section{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    
+}
+.seveth-section-details{
+    background-color: white;
+    h3{
+        text-align: start;
+        padding-top: 20px;
+        padding: 10px;
+        
+
+    }
+    p{
+        text-align: start;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-style: italic;
+        padding: 10px;
+
+    }
+    h6{
+        text-decoration: none;
+        text-align: start;
+        font-style: italic;
+        padding: 10px;
+
+        
+
+    }
+}
+
+.hsptl-care-card-col-1--seventh-section{
+width: 31%;
+padding-top: 25px;
+}
+// map section
+.hsptl-map-section{
+
+    background-image: url(../img/map-web.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 800px;
+  
+    
+
+}
+.map-title{
+    text-align: center;
+    @include heading-style;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+.map-description{
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+
 
 
 
@@ -161,16 +293,27 @@ span{
 }
     .hsptl-care-card-col-1{
         width: 100%;
-        height: auto;
+        display: block;
+        
     }
     .hsptl-care-card-col-2{
         width: 100%;
-        height: auto;
+        display: block;
+        
     }
     .hsptl-care-card-col-3{
         width: 100%;
-        height: auto;
+        display: block;
+        text-align: center;
     }
+    .hsptl-fourth-row-row{
+        width: 100%;
+        display: block;
+      
+
+    }
+    
+    
 }
 // fourth section
 @media (max-width: 768px) {
@@ -195,5 +338,55 @@ span{
        
     
     }
+    .hsptl-fifth-col-1{
+        width: 100%;
+
+
+    }
     
 }
+@media (max-width: 768px) {
+    .hsptl-fourth-card {
+        width: 100%;
+    }
+
+    .hsptl-fourth-card-row {
+        width: 100%;
+        display: block;
+        text-align: center;
+
+
+}
+.hsptl-fifth-row{
+    width: 100%;
+    display: block;
+}
+.hsptl-fifth-col-2{
+    width: 100%;
+    display: block;
+}
+.row{
+    width: 100%;
+    display: block;
+  
+
+}
+.col{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+
+}
+.hsptl-care-card-row--seventh-section{
+    width: 100%;
+    display: block
+    
+}
+.hsptl-care-card-col-1--seventh-section{
+    width: 100%;
+    text-align: center;
+    
+}
+
+}
+
